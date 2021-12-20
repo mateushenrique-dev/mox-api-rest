@@ -11,7 +11,7 @@ class CreateCategoryService{
  async execute({ name, description }: CategoryRequest):Promise<Category | Error>{
    const repository = getRepository(Category);
 
-   const isExists =  repository.findOne({ name });
+   const isExists = await repository.findOne({ name });
 
    if(isExists){
      return new Error('category already exists');
@@ -24,3 +24,6 @@ class CreateCategoryService{
     return category;
   }
 }
+
+
+export { CreateCategoryService }
