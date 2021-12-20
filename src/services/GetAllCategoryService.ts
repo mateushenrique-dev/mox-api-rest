@@ -1,10 +1,8 @@
-import { getRepository } from 'typeorm'
 import { Category } from '../entities/Category'
-
+import { repository } from '../repositories/categoryRepository'
 
 class GetAllCategoryService{
   async  execute():Promise<Category[]>{
-    const repository = getRepository(Category);
 
     const category = await repository.find()
 
