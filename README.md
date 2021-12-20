@@ -13,18 +13,18 @@ pode ver que não crie o arquivo ***ormconfig*** porque estou usando variáveis 
  - [x] Listar com relacionamento com categorias
 - [x] Deletar Filmes
 - [x] Actualizar Filmes
-- [] Criar Usuario
-  - [] Criar Usuario com facebook
-  - [] Criar Usuario github 
-- [] Deletar Usuario
-- [] Actualizar informacoes do Usuario
-- [] baixar e dar like nos Filmes ou vidios
-- [] envio de email pra Usuario que denuciar plágio de vidios ou Filmes
-- [] remocao do Usuario que plagiou os vidios / Filmes 
-- [] refectory of class error global  
+- [ ] Criar Usuario
+  - [ ] Criar Usuario com facebook
+  - [ ] Criar Usuario github 
+- [ ] Deletar Usuario
+- [ ] Actualizar informacoes do Usuario
+- [ ] baixar e dar like nos Filmes ou vidios
+- [ ] envio de email pra Usuario que denuciar plágio de vidios ou Filmes
+- [ ] remocao do Usuario que plagiou os vidios / Filmes 
+- [ ] refectory of class error global  
 - [x] refectory of repository global 
 
 
 
 
-feito com 💙 por (Yazalde Filimone)[https://github.com/yazaldefilimonepinto]
+feito com 💙 por [Yazalde Filimone](https://github.com/yazaldefilimonepinto)
