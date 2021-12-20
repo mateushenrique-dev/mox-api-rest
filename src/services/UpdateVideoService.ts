@@ -16,7 +16,7 @@ class UpdateVideoService{
 
     const isExistsCategory =  await repository.findOne(id);
     if(!isExistsCategory){
-      return new Error('Category does not exists');
+      return new Error('Video does not exists');
     }
     
     isExistsCategory.name = name ? name : isExistsCategory.name;
