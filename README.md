@@ -1,5 +1,8 @@
 # MOVIE MOX - API REST FULL COM TYPEORM E TYPESCRIPT
 
+pode ver que não crie o arquivo ***ormconfig*** porque estou usando variáveis de ambiente então crie o arquivo ***.env*** e coloca tudo lá .
+
+
 [x] Criar categorias
 [x] Actualizar categorias por id
 [x] Deletar categorias por id
