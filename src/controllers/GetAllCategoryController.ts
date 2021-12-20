@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { GetAllCategoryService } from '../services/GetAllCategoryService';
 
 class GetAllCategoryController{
-  async handle(request, response):Promise<Response>{
+  async handle(request:Request, response:Response):Promise<Response>{
     const service = new GetAllCategoryService();
 
     const result = await  service.execute()
