@@ -1,12 +1,6 @@
 import { Category } from '../entities/Category'
 import {  repository } from '../repositories/categoryRepository';
-
-type CategoryUpdateRequest = {
-  id:string
-  name:string
-  description:string
-}
-
+import { CategoryUpdateRequest } from '../interfaces/categoryInterface';
 
 class UpdateCategoryService{
   async execute({ name, id, description }: CategoryUpdateRequest ):Promise<Category | Error >{
