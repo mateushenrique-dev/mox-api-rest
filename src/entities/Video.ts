@@ -11,6 +11,9 @@ class Video{
   name:string
 
   @Column()
+  duration:number
+
+  @Column()
   description:string
 
   @Column()
