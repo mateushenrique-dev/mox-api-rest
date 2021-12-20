@@ -1,4 +1,4 @@
-import { Response } from '../interfaces/error';
+import { Response } from '../../interfaces/error';
 
 class HttpResponse{
   static serverError():Response{
