@@ -1,7 +1,7 @@
 import { getRepository } from 'typeorm';
 import { Video } from '../entities/Video';
 
-class DeleteVidioService{
+class DeleteVideoService{
   async execute(id : string):Promise<void | Error>{
     const repository = getRepository(Video);
     const isExists = await repository.findOne(id);
@@ -14,4 +14,4 @@ class DeleteVidioService{
   }
 }
 
-export { DeleteVidioService }
+export { DeleteVideoService }
