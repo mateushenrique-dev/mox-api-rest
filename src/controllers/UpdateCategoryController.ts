@@ -3,7 +3,8 @@ import { Request, Response } from 'express'
 
 class UpdateCategoryController{
   async handle(request:Request, response:Response):Promise<Response>{
-    const { name, description, id  } = request.body
+    const { id } = request.params;
+    const { name, description  } = request.body
     const service = new UpdateCategoryService();
     const result = await service.execute({ name, id, description });
 
