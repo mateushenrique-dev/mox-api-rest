@@ -17,6 +17,8 @@
 [] baixar e dar like nos Filmes ou vidios
 [] envio de email pra Usuario que denuciar plágio de vidios ou Filmes
 [] remocao do Usuario que plagiou os vidios / Filmes 
+[] refectory of class error global  
+[x] refectory of repository global 
 
 
 
