@@ -1,6 +1,5 @@
 import { Video } from '../entities/Video'
-import { getRepository } from 'typeorm';
-
+import { repository } from '../repositories/videoRepository'
 type VideoUpdateRequest = {
   id:string
   name:string
@@ -12,7 +11,6 @@ type VideoUpdateRequest = {
 
 class UpdateVideoService{
   async execute({ name, id, description, duration, category_id }: VideoUpdateRequest ):Promise<Video | Error >{
-    const repository = getRepository(Video);
 
     const isExistsCategory =  await repository.findOne(id);
     if(!isExistsCategory){
