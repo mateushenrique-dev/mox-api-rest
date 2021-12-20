@@ -1,5 +1,5 @@
 import { Category } from '../entities/Category'
-import { getRepository } from 'typeorm';
+import {  repository } from '../repositories/categoryRepository';
 
 type CategoryUpdateRequest = {
   id:string
@@ -10,8 +10,7 @@ type CategoryUpdateRequest = {
 
 class UpdateCategoryService{
   async execute({ name, id, description }: CategoryUpdateRequest ):Promise<Category | Error >{
-    const repository = getRepository(Category);
-
+    
     const isExistsCategory =  await repository.findOne(id);
     if(!isExistsCategory){
       return new Error('Category does not exists');
