@@ -1,5 +1,5 @@
 {
-  "name": "crud-api-rest-typeorm",
+  "name": "api-rest-movie-mox",
   "version": "1.0.0",
   "main": "index.js",
   "scripts":{
