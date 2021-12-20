@@ -1,11 +1,6 @@
 import { Category } from '../entities/Category';
-import {  repository } from '../repositories/categoryRepository'
-
-type CategoryRequest = {
-  name:string
-  description:string
-}
-
+import {  repository } from '../repositories/categoryRepository';
+import { CategoryRequest } from '../interfaces/categoryInterface';
 
 class CreateCategoryService{
  async execute({ name, description }: CategoryRequest):Promise<Category | Error>{
