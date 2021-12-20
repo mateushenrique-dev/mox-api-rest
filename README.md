@@ -1,4 +1,4 @@
-# CRUD API REST FULL COM TYPEORM E TYPESCRIPT
+# MOVIE MOX - API REST FULL COM TYPEORM E TYPESCRIPT
 
 [x] Criar categorias
 [x] Actualizar categorias por id
