@@ -1,14 +1,6 @@
 import { Video } from '../entities/Video'
 import { repository } from '../repositories/videoRepository'
-type VideoUpdateRequest = {
-  id:string
-  name:string
-  description:string
-  duration:number
-  category_id:string
-}
-
-
+import { VideoUpdateRequest } from '../interfaces/videoInterface';
 class UpdateVideoService{
   async execute({ name, id, description, duration, category_id }: VideoUpdateRequest ):Promise<Video | Error >{
 
