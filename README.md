@@ -7,8 +7,8 @@
 [x] Criar Filmes ou vidios com id da categoria
 [x] Listar Filmes
   [x] Listar com relacionamento com categorias
-[] Deletar Filmes
-[] Actualizar Filmes
+[x] Deletar Filmes
+[x] Actualizar Filmes
 [] Criar Usuario
   [] Criar Usuario com facebook
   [] Criar Usuario github 
