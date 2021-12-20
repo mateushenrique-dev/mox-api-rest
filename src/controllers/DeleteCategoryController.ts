@@ -15,3 +15,5 @@ class DeleteCategoryController{
 
   }
 }
+
+export { DeleteCategoryController }
