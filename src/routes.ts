@@ -8,6 +8,7 @@ import { UpdateCategoryController } from './controllers/UpdateCategoryController
 
 //Video
 import { CreateVideoController } from './controllers/CreateVideoController';
+import { GetAllVideoController } from './controllers/GetAllVideoController';
 
 const routes = Router();
 
@@ -19,6 +20,7 @@ routes.put('/categories', new UpdateCategoryController().handle);
 
 //Video
 routes.post('/video', new CreateVideoController().handle);
+routes.get('/video', new GetAllVideoController().handle);
 
 
 
