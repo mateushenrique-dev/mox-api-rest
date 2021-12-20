@@ -4,8 +4,7 @@ import { CreateCategoryService } from '../services/CreateCategoryService'
 class CreateCategoryController{
   async handle(request:Request, response:Response):Promise<Response>{
     const service = new CreateCategoryService();
-    
-    const { name, description } = request.body
+    const { name, description } = request.body;
     const result = await service.execute({ name, description });
 
     if(result instanceof Error){
