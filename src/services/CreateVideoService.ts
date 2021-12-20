@@ -10,7 +10,7 @@ type videoRequest = {
   category_id:string
 }
 
-class CreateCategoryVideo{
+class CreateVideoService{
   async execute({name, duration, description, category_id }: videoRequest):Promise<Video | Error> {
     const repositoryCategory = getRepository(Category);
     const repository = getRepository(Video);
@@ -28,4 +28,4 @@ class CreateCategoryVideo{
   }
 }
 
-export { CreateCategoryVideo }
+export { CreateVideoService }
